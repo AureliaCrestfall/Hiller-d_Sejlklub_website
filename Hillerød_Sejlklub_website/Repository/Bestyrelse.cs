@@ -7,5 +7,9 @@
 
 
         public override void Getall() { }
+
+        public void Blog() { }
+
+        public void Hold() { }
     }
 }
