@@ -25,7 +25,7 @@ namespace Hillerød_Sejlklub_website.Service
         {
 
         }
-        public void AddDefict(string fail)
+        public void AddDefect(string fail)
         {
 
         }
