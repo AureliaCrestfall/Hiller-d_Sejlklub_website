@@ -2,11 +2,13 @@
 {
     public class Boat
     {
+        private static int _tempID = 0;
         string _name;
         string _registrationNumber;
         string _text;
         string _picture;
         bool _avaliability;
+        int _id;
         List<string> _defect;
         public string Name
         {
@@ -38,6 +40,11 @@
             get { return _defect; }
             set { _defect = value; }
         }
+        public int Id
+        {
+            get { return _id; }
+            set { _id = value; }
+        }
         public Boat()
         {
             _name = "test";
@@ -45,6 +52,7 @@
             _text = "test";
             _picture = "test";
             _avaliability = true;
+            _id = _tempID++;
         }
         public Boat(string name,string regnumber,string text,string picture) : this()
         {

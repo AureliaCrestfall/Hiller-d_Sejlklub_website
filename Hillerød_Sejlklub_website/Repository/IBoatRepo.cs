@@ -8,6 +8,6 @@ namespace Hillerød_Sejlklub_website.Repository
         void Add(Boat boat);
         void AddDefect(string fail);
         List<Boat> GetAll();
-        void status(bool status);
+        void status(int id,Boat status);
     }
 }

@@ -36,9 +36,9 @@ namespace Hillerød_Sejlklub_website.Repository
         {
             return Boats;
         }
-        public void status(bool status)
+        public void status(int id,Boat status)
         {
-            
+            Boats[id] = status;
         }
 
     }
