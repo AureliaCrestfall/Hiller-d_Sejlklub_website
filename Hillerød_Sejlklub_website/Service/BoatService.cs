@@ -12,22 +12,22 @@ namespace Hillerød_Sejlklub_website.Service
 
             _boatRepo.Add(boat);
         }
-        public void Remove(string name)
+        public void Remove(int name)
         {
-
+            _boatRepo.Remove(name);
         }
         public List<Boat> GetAll()
         {
             return _boatRepo.GetAll();
 
         }
-        public void Status(bool status)
+        public void Status(int id,Boat status)
         {
-
+            _boatRepo.status(id, status);
         }
         public void AddDefect(string fail)
         {
-
+            _boatRepo.AddDefect(fail);
         }
 
         public void Update(Event updatedBoat)

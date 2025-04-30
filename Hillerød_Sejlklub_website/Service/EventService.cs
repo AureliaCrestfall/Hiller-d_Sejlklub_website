@@ -13,9 +13,9 @@ namespace Hillerød_Sejlklub_website.Service
 
             _eventRepo.Add(vent);
         }
-        public void Remove(string name)
+        public void Remove(int name)
         {
-
+            _eventRepo.Remove(name);
         }
         public List<Event> GetAll()
         {

@@ -11,9 +11,9 @@ namespace Hillerød_Sejlklub_website.Service
 
             _blogRepo.Add(blog);
         }
-        public void Remove(string name)
+        public void Remove(int title)
         {
-
+            _blogRepo.Remove(title);
         }
         public List<Blog> GetAll()
         {
