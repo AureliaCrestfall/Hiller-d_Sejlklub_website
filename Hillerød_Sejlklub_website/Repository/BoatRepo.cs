@@ -20,7 +20,7 @@ namespace Hillerød_Sejlklub_website.Repository
         {
             Boats.Add(boat);
         }
-         public void AddDefict(string fail)
+         public void AddDefect(string fail)
         {
 
         }
