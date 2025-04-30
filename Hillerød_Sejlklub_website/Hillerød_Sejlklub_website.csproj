@@ -7,8 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Photos\" />
+    <Folder Include="wwwroot\Photos\" />
     <Folder Include="wwwroot\Media\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Photos\sejlbådNr.1.png" />
   </ItemGroup>
 
 </Project>
