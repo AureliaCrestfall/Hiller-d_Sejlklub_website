@@ -17,20 +17,20 @@ namespace Hillerød_Sejlklub_website.Repository
             return Members;
         }
 
-            
+
         public void Add(Member member)
         {
             Members.Add(member);
         }
 
-        public void Remove(string member)
+        public void Remove(int member)
         {
-
+            Members.RemoveAt(member);
         }
-        public void MakeBoardMember(bool board)
-        {
-
-        }
+        //public void MakeBoardMember(bool board)
+        //{
+        //    BoardMember.Add();
+        //}
     
     }
 }

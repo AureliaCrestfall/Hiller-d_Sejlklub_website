@@ -22,9 +22,9 @@ namespace Hillerød_Sejlklub_website.Repository
             Blogs.Add(blog);
 
         }
-        public void Remove(string title)
+        public void Remove(int title)
         {
-
+            Blogs.RemoveAt(title);
         }
     }
 }

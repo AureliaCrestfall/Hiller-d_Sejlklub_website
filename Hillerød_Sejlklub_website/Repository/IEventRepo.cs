@@ -6,6 +6,6 @@ namespace Hillerød_Sejlklub_website.Repository
     {
         List<Event> GetAll();
         void Add(Event test);
-        void Remove(string name);
+        void Remove(int name);
     }
 }

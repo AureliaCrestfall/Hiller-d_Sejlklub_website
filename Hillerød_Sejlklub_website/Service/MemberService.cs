@@ -20,10 +20,10 @@ namespace Hillerød_Sejlklub_website.Service
             return _memberRepo.GetAll();
 
         }
-        public void MakeBoardMEmber()
-        {
+        //public void MakeBoardMEmber()
+        //{
 
-        }
+        //}
         public void Update(Event updatedMember)
         {
 

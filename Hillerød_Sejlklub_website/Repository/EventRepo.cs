@@ -18,14 +18,11 @@ namespace Hillerød_Sejlklub_website.Repository
         {
              Events.Add(test);
         }
-        public void Remove(string name)
+        public void Remove(int name)
         {
-
+            Events.RemoveAt(name);
         }
-        public EventRepo()
-        {
-
-        }
+        
 
 
     }
