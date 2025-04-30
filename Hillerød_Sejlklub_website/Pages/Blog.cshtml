@@ -9,11 +9,20 @@
 
 <html>
 
-<h1 class="text-center">kig på blogs her</h1>
-<p class="text-center">se hvad folk er op til</p>
+<h1 class="text-center">Hillerød Sejlklubs blog</h1>
+<p class="text-center">Se seneste nyt fra klubben her</p>
 
 
 <body>
+	<form method="post" action="">
+	<label for="comment">Skriv et indlæg:</label>
+	<textarea class="form-control" rows="3" id="comment" name="text"></textarea>
+		<div class="mb-3">
+			<label for="formFileMultiple" class="form-label"></label>
+			<input class="form-control" type="file" id="formFileMultiple" multiple>
+		</div>
+	<button type="submit" class="btn btn-primary">Indsend</button>
+	</form>
 </body>
 
 
