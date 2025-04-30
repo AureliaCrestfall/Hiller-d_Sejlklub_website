@@ -38,5 +38,26 @@
             get { return _defect; }
             set { _defect = value; }
         }
+        public Boat()
+        {
+            _name = "test";
+            _registrationNumber = "test";
+            _text = "test";
+            _picture = "test";
+            _avaliability = true;
+        }
+        public Boat(string name,string regnumber,string text,string picture) : this()
+        {
+            _name = name;
+            _registrationNumber = regnumber;
+            _text = text;
+            _picture = picture;
+        }
+        public Boat(string name, string regnumber, string text, string picture,bool avaliabilty):this( name,  regnumber,  text, picture)
+        {
+            _avaliability = avaliabilty;
+
+        }
+
     }
 }

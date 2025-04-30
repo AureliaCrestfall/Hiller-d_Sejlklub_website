@@ -20,6 +20,19 @@
             get { return _text; }
             set { _text = value; }
         }
+        public Blog()
+        {
+             _title= "test";
+             _text="test";
+             _picturepath="test";
+
+        }
+        public Blog(string title,string text,string picture):this()
+        {
+            _title = title;
+            _text = text;
+            _picturepath = picture;
+        }
 
 
     }

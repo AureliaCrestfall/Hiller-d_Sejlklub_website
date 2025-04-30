@@ -1,4 +1,6 @@
-﻿namespace Hillerød_Sejlklub_website.Model
+﻿using System.Net.Mail;
+
+namespace Hillerød_Sejlklub_website.Model
 {
     public class Event
     {
@@ -17,8 +19,8 @@
             get { return _picture; }
             set { _picture = value; }
         }
-        public DateTime StartTime 
-        { 
+        public DateTime StartTime
+        {
             get { return _startTime; }
             set { _startTime = value; }
         }
@@ -32,5 +34,25 @@
             get { return _location; }
             set { _location = value; }
         }
+        public Event()
+        {
+            _name = "test";
+            _picture = "test.png";
+            _startTime = DateTime.Now;
+            _endTime = DateTime.Now;
+            _location = "test";
+        }
+        public Event(string name,string picture, DateTime start,DateTime end,string location) : this()
+        {
+            _name = name;
+            _picture = picture;
+            _startTime = start;
+            _endTime = end;
+            _location = location;
+
+        }
+       
+
+
     }
 }

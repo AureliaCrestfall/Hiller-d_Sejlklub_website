@@ -32,6 +32,36 @@
             get { return _emailAddress; }
             set { _emailAddress = value; }
         }
+
+        public Member()
+        {
+            _name = "test";
+            _phoneNumber = "88 88 88 88";
+            _emailAddress = "test@test.test";
+            _picture = "test.png";
+            _boardMember = false;
+
+
+
+        }
+        public Member(string name, string picture, string phoneNumber,string email):this()
+        {
+
+            _name = name;
+            _phoneNumber = phoneNumber;
+            _emailAddress = email;
+            _picture = picture;
+
+        }
+        public Member(string name, string picture, string phoneNumber, string email, bool boardmember) : this( name,  picture,  phoneNumber,  email)
+        {
+      
+            _boardMember = boardmember;
+        }
+
+
+
+
     }
 
 }
