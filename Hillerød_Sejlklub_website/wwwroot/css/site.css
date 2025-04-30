@@ -16,7 +16,10 @@ html {
   position: relative;
   min-height: 100%;
 }
-
+.carousel-inner img {
+    max-height: 500px;
+    object-fit: contain;
+}
 body {
   margin-bottom: 60px;
 }
