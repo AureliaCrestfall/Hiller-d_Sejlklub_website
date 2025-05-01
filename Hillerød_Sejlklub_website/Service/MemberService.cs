@@ -5,7 +5,11 @@ namespace Hillerød_Sejlklub_website.Service
     public class MemberService
     {
         IMemberRepo _memberRepo;
-
+      
+        public MemberService(IMemberRepo memberrepo)
+        {
+            _memberRepo = memberrepo;
+        }
         public void Add(Member member)
         {
 
@@ -28,5 +32,14 @@ namespace Hillerød_Sejlklub_website.Service
         {
 
         }
+        public Member Get(string name)
+        {
+            return _memberRepo.Get(name);
+        }
+
+        //public void StartUpMembers()
+        //{
+        //    _memberRepo.StartUpMembers();
+        //}
     }
 }

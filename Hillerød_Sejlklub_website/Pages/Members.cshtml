@@ -2,7 +2,7 @@
 @model Hillerød_Sejlklub_website.Pages.MembersModel
 @{
 }
-<div class="row"> <!--PROFILE CARDS FOR MEMBERS START-->
+@* <div class="row"> <!--PROFILE CARDS FOR MEMBERS START-->
     <div class="col-md-4 mb-4">
         <div class="card" style="width: 100%;">
             <img class="card-img-top" src="~/Photos/FieProfil.png" alt="Card image">
@@ -33,4 +33,19 @@
                 <a href="#" class="btn btn-primary">Rediger</a>
             </div>
         </div>
-    </div> <!--PROFILE CARDS FOR MEMBERS END-->
+    </div> <!--PROFILE CARDS FOR MEMBERS END--> *@
+<div class="row row-cols-3">
+@foreach (var Member in Model.Members)
+{
+    <div class="col-md-4 mb-4">
+        <div class="card" style="width: 100%;">
+            <img class="card-img-top" src="~/Photos/@Member.Picture" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">@Member.Name</h4>
+                <p class="card-text">Email: @Member.EmailAddress<br />Telefon: @Member.PhoneNumber</p>
+                <a href="#" class="btn btn-primary">Rediger</a>
+            </div>
+        </div>
+        </div>
+    
+}

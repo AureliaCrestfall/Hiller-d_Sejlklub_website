@@ -8,5 +8,7 @@ namespace Hillerød_Sejlklub_website.Repository
         void Remove(int member);
         void Add(Member member);
         List<Member> GetAll();
+        Member Get(string name);
+
     }
 }
