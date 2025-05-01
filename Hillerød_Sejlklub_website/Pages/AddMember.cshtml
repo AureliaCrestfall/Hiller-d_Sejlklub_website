@@ -1,0 +1,32 @@
+﻿@page
+@model Hillerød_Sejlklub_website.Pages.AddMemberModel
+@{
+}
+<container-sm>
+    <div class="text-center">
+        <h1>add member</h1>
+    </div>
+
+    <div class="card shadow-sm">
+        <div class="card-body text-center">
+            <form method="post">
+                <div class="form-group container-fluid">
+                    <label for="inputDateTime">Startid: </label>
+                    <input type="text" asp-for="member.Name"  aria-describedby="dateTimeHelp" placeholder="Enter name" step="3600">
+                    <label for="inputDateTime">Sluttid: </label>
+                    <input type="email" asp-for="member.EmailAddress"  aria-describedby="dateTimeHelp" placeholder="Enter email" step="3600" />
+                </div>
+           >
+                <div class="form-group mt-2">
+                    <label for="inputComment">Skriv kommentar her: </label>
+                    <input type="text" asp-for="member.PhoneNumber" id="inputForm" aria-describedby="textHelp" placeholder="Enter phonenumber">
+                    <label for="inputComment">Skriv kommentar her: </label>
+
+                    <input type="text" asp-for="member.Picture" id="inputForm" aria-describedby="textHelp" placeholder="Enter picturepath">
+
+                </div>
+                <button type="submit" class="btn btn-primary mt-5">Submit</button>
+            </form>
+            </<div>
+            </div>
+</container-sm>
