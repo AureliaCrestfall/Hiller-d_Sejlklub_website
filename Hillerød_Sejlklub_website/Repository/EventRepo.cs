@@ -4,23 +4,24 @@ namespace Hillerød_Sejlklub_website.Repository
 {
     public class EventRepo :IEventRepo
     {
-        List<Event> _events;
-        protected List<Event> Events
-        {
-            get { return _events; }
-             set {  _events = value; }
-        } 
+        List<Event> _events = new List<Event>();
+
+        //private List<Event> Events
+        //{
+        //    get { return _events; }
+        //     set {  _events = value; }
+        //} 
         public List<Event> GetAll()
         {
-            return Events;
+            return _events;
         }
         public void Add(Event test)
         {
-             Events.Add(test);
+            _events.Add(test);
         }
         public void Remove(int name)
         {
-            Events.RemoveAt(name);
+            _events.RemoveAt(name);
         }
         
 

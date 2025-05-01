@@ -7,7 +7,10 @@ namespace Hillerød_Sejlklub_website.Service
     public class EventService
     {
         IEventRepo _eventRepo;
-
+        public EventService(IEventRepo memberrepo)
+        {
+            _eventRepo = memberrepo;
+        }
         public void Add(Event vent)
         {
 
