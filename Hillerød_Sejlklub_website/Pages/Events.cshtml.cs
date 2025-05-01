@@ -17,6 +17,8 @@ namespace Hillerød_Sejlklub_website.Pages
 
         public Event eventure { get; set; }
 
+        public List<Event> events { get; set; }
+
         public IActionResult OnPost()
         {
             _eventure.Add(eventure);
@@ -25,6 +27,7 @@ namespace Hillerød_Sejlklub_website.Pages
 
         public void OnGet()
         {
+            events = _eventure.GetAll();
         }
     }
 }

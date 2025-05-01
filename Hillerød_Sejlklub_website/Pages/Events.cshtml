@@ -45,3 +45,20 @@
             </<div>
             </div>
 </container-sm>
+
+
+<div class="row row-cols-3">
+@foreach (var Event in Model.events)
+{
+    <div class="col-md-4 mb-4">
+        <div class="card" style="width: 100%;">
+            <img class="card-img-top" src="~/Photos/@Event.Picture" alt="Card image">
+            <div class="card-body">
+                <h4 class="card-title">@Event.Location</h4>
+                    <p class="card-text">Starttidspunkt: @Event.StartTime.ToString("HH:mm")<br />Sluttidspunkt: @Event.EndTime.ToString("HH:mm")</p>
+                <a href="#" class="btn btn-primary">Rediger</a>
+            </div>
+        </div>
+        </div>
+    
+}
