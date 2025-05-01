@@ -2,3 +2,26 @@
 @model Hillerød_Sejlklub_website.Pages.EventsModel
 @{
 }
+<link href="~/css/stylesheet.css" rel="stylesheet" />
+
+<!DOCTYPE html>
+
+<html>
+
+<h1 class="text-center">Hillerød Sejlklubs begivenheder</h1>
+<p class="text-center">Se hvad der sker i klubben her</p>
+
+
+<body>
+	<form method="post" action="">
+		<!--BLOG POST START-->
+		<label for="comment">Opret en ny begivenhed:</label>
+		<textarea class="form-control" rows="4" id="comment" name="text"></textarea>
+		<div class="mb-3">
+			<!--File upload-->
+			<label for="formFileMultiple" class="form-label"></label>
+			<input class="form-control" type="file" id="formFileMultiple" multiple style="width: 200px;">
+		</div>
+		<button type="submit" class="btn btn-primary">Indsend</button> <!--Submit button-->
+	</form> <!--BLOG POST END-->
+</body>
