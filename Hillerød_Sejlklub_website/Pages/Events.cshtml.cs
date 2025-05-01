@@ -1,5 +1,6 @@
 using Hillerød_Sejlklub_website.Model;
 using Hillerød_Sejlklub_website.Service;
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 
@@ -7,17 +8,18 @@ namespace Hillerød_Sejlklub_website.Pages
 {
     public class EventsModel : PageModel
     {
-        private readonly EventService _eventure;
 
+        private EventService _eventure;
+        [BindProperty]
+        public Event eventure { get; set; }
+        public List<Event> events { get; set; }
         public EventsModel(EventService eventure2)
         {
             _eventure = eventure2;
             eventure = new Event();
         }
 
-        public Event eventure { get; set; }
-
-        public List<Event> events { get; set; }
+       
 
         public IActionResult OnPost()
         {

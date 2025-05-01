@@ -6,12 +6,12 @@ namespace Hillerød_Sejlklub_website.Repository
 {
     public class MemberRepo:IMemberRepo
     {
-        List<Member> _members = new List<Member>();
-       //  List<Member> Members
+        List<Member> _members;
+        //  List<Member> Members
         //{
         //    get { return _members; }
-       //     set { _members = value; }
-    //    }
+        //     set { _members = value; }
+        //    }
         public List<Member> GetAll()
         {
             return _members;
@@ -41,6 +41,7 @@ namespace Hillerød_Sejlklub_website.Repository
          
         public MemberRepo()
         {
+            _members = new List<Member>();
             _members.Add(new Member("Pedro Dunhammer", "PedroProfil.png", "51533591", "HaderEfternavn@hotmail.com"));
             _members.Add(new Member("Danny Dunhammer", "DannyProfil.png", "40538791", "DirtyDanny@hotmail.com"));
             _members.Add(new Member("Fie Formandsen", "FieProfil.png", "44528579", "BoatMomma@hotmail.com"));

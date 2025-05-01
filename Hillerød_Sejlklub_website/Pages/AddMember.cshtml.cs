@@ -10,8 +10,11 @@ namespace Hillerød_Sejlklub_website.Pages
         public void OnGet()
         {
         }
-        public Member member { set; get; }
+        
         private MemberService _ms;
+        [BindProperty]
+        public Member member { set; get; }
+
         public AddMemberModel(MemberService ms)
         {
            member = new Member();
