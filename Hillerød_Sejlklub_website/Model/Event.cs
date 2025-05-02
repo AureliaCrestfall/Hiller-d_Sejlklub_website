@@ -38,8 +38,8 @@ namespace Hillerød_Sejlklub_website.Model
         {
             _name = "test";
             _picture = "test.png";
-            _startTime = DateTime.Now;
-            _endTime = DateTime.Now;
+            _startTime = DateTime.Now.Date.AddHours(DateTime.Now.Hour);
+            _endTime = _startTime.AddHours(1);
             _location = "test";
         }
         public Event(string name,string picture, DateTime start,DateTime end,string location) : this()
