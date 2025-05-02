@@ -4,6 +4,7 @@
     ViewData["Title"] = "Booking";
 }
 <h2>Booking og fejlmelding af både</h2>
+<br />
 <!DOCTYPE html>
 <html>
 
@@ -12,9 +13,10 @@
         <!--PROFILE CARDS FOR MEMBERS START-->
         <div class="col-md-4 mb-4">
             <div class="card" style="width: 100%;">
-                <img class="card-img-top" src="~/Photos/sejlbådNr.1.png" alt="Card image">
+                <img class="card-img-top" src="~/Photos/sejlbådNr.1.png" alt="Card image" id="boat">
                 <div class="card-body">
-                    <h4 class="card-title">Hende Majestæt</h4>
+                    <h4 class="card-title">Hendes Majestæt</h4>
+                    <p id="ColorUnavailable">Optaget</p>
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
                         <label class="form-check-label">Rorpind knækket</label>
@@ -31,14 +33,16 @@
                     <textarea class="form-control" rows="1" id="comment" name="text"></textarea>
                     <br />
                     <a href="#" class="btn btn-primary">Book</a>      <a href="#" class="btn btn-primary">Fejlmeld</a>
+                    
                 </div>
                 </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="card" style="width: 100%;">
-                        <img class="card-img-top" src="~/Photos/Båd2.jpg" alt="Card image">
+                <img class="card-img-top" src="~/Photos/Båd2.jpg" alt="Card image" id="boat">
                         <div class="card-body">
                             <h4 class="card-title">Fregatten</h4>
+                    <p id="ColorUnavailable">Optaget</p>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
                                 <label class="form-check-label">Rorpind knækket</label>
@@ -60,9 +64,10 @@
                         </div>
                 <div class="col-md-4 mb-4">
                     <div class="card" style="width: 100%;">
-                        <img class="card-img-top" src="~/Photos/Båd3.jpg" alt="Card image">
+                <img class="card-img-top" src="~/Photos/Båd3.jpg" alt="Card image" id="boat">
                         <div class="card-body">
                             <h4 class="card-title">Daddy Yankee</h4>
+                    <p id="ColorAvailable"> Ledig</p>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something">
                                 <label class="form-check-label">Rorpind knækket</label>
